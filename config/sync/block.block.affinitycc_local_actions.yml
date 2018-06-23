@@ -1,0 +1,20 @@
+uuid: 233fa487-32c0-4443-95cb-55f97e3a5202
+langcode: en
+status: true
+dependencies:
+  theme:
+    - affinitycc
+_core:
+  default_config_hash: mB_JcXYKxy9n1XCjKGMr9kWv0I5bACXfFjKnQdb1FEg
+id: affinitycc_local_actions
+theme: affinitycc
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

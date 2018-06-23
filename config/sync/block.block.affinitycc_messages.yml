@@ -1,0 +1,22 @@
+uuid: 40929769-e4c5-42ce-8c26-cc7ae1e1135f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - affinitycc
+_core:
+  default_config_hash: NMYfh7M4ijRWzK92380GZgm-N9Xkbu-LJ61-7haqcTo
+id: affinitycc_messages
+theme: affinitycc
+region: highlighted
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

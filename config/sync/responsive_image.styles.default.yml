@@ -1,0 +1,11 @@
+uuid: 493e7edb-556e-49b1-bf33-d7646499ee91
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: I0RuybbOHjuUskBKnqxpmOqNj0eWkcynQFB_Gdo2MYc
+id: default
+label: Default
+image_style_mappings: {  }
+breakpoint_group: responsive_image
+fallback_image_style: '_original image_'

@@ -1,0 +1,21 @@
+uuid: f8b9cac8-9998-4794-a676-f7a0edaf9365
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_address_city
+field_name: field_address_city
+entity_type: block_content
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

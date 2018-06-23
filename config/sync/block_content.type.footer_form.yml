@@ -1,0 +1,8 @@
+uuid: 90fc3eec-aa28-4c8b-88bb-fa187efee2a2
+langcode: en
+status: true
+dependencies: {  }
+id: footer_form
+label: 'Footer Form'
+revision: 0
+description: 'Block used to display a form in the footer.'

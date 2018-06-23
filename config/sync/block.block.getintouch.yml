@@ -1,0 +1,31 @@
+uuid: 02cfdfba-ae2a-4870-b2fe-5d9a2ed04547
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_form:8673903b-7b42-43fa-85df-7e185550c3ad'
+  module:
+    - block_content
+    - system
+  theme:
+    - affinitycc
+id: getintouch
+theme: affinitycc
+region: footer
+weight: -7
+provider: null
+plugin: 'block_content:8673903b-7b42-43fa-85df-7e185550c3ad'
+settings:
+  id: 'block_content:8673903b-7b42-43fa-85df-7e185550c3ad'
+  label: 'Get In Touch'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,22 @@
+uuid: 2e64f9e5-5d3e-48cd-8630-567b3a06048c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - thunder_base
+_core:
+  default_config_hash: PEqEz1k7tHRCJ_mtDJq1WRTmzZA0hF_JELDRF9H7fNU
+id: thunder_base_content
+theme: thunder_base
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

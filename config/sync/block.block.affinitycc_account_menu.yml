@@ -1,0 +1,26 @@
+uuid: cdcbf833-9c5a-4436-bf57-f9fe8caf2677
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - affinitycc
+_core:
+  default_config_hash: 0ZU9lzrNxZ-EwxqR4HNTRmIgDwNmO3mFSntA0IjlCHE
+id: affinitycc_account_menu
+theme: affinitycc
+region: header
+weight: -5
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: 0bad037c-0ce7-4df5-8733-5273cc63d8da
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_form
+    - field.storage.block_content.field_address_state
+  module:
+    - options
+id: block_content.footer_form.field_address_state
+field_name: field_address_state
+entity_type: block_content
+bundle: footer_form
+label: 'Address State'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

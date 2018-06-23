@@ -1,0 +1,35 @@
+uuid: eae4cc3f-9361-438a-b1f5-5a1cb340eb91
+langcode: en
+status: false
+dependencies:
+  module:
+    - ctools
+    - system
+  theme:
+    - affinitycc
+_core:
+  default_config_hash: WiYwkKEpgBru-njo1rAKq0wNbyR7IESs2O48HJnZlq0
+id: affinitycc_page_title
+theme: affinitycc
+region: header
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/five-principles"
+    negate: true
+    context_mapping: {  }

@@ -1,0 +1,26 @@
+uuid: e7b767ae-bda4-4cbe-a63a-3832b4c589e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - affinitycc
+_core:
+  default_config_hash: KTq-YMoHZohfQaTto3A_LtSlhTtP7qC3BctmhF21s0I
+id: affinitycc_main_menu
+theme: affinitycc
+region: primary_menu
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: Menu
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

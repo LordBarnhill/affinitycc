@@ -1,0 +1,65 @@
+uuid: e96475f4-a505-418b-875b-e485a6f120a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs
+    - node.type.article
+    - paragraphs.paragraphs_type.cta
+    - paragraphs.paragraphs_type.principles
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: uatxfdtx04QssvulG8fOSD3zYZn4bS3UM2N7hdzdYao
+id: node.article.field_paragraphs
+field_name: field_paragraphs
+entity_type: node
+bundle: article
+label: Paragraphs
+description: 'Add different types of content with various paragraphs.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 1
+    target_bundles:
+      cta: cta
+      principles: principles
+    target_bundles_drag_drop:
+      text:
+        weight: 1
+        enabled: false
+      quote:
+        weight: 2
+        enabled: false
+      link:
+        weight: 3
+        enabled: false
+      instagram:
+        weight: 4
+        enabled: false
+      twitter:
+        weight: 5
+        enabled: false
+      gallery:
+        weight: 6
+        enabled: false
+      image:
+        weight: 7
+        enabled: false
+      video:
+        weight: 8
+        enabled: false
+      pinterest:
+        weight: 9
+        enabled: false
+      cta:
+        enabled: true
+        weight: 12
+      principles:
+        enabled: true
+        weight: 18
+field_type: entity_reference_revisions

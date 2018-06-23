@@ -1,0 +1,124 @@
+uuid: 4f42df79-12a9-4670-9b54-e379ccc2d0a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_form
+    - field.field.block_content.footer_form.body
+    - field.field.block_content.footer_form.field_address_city
+    - field.field.block_content.footer_form.field_address_name
+    - field.field.block_content.footer_form.field_address_state
+    - field.field.block_content.footer_form.field_address_street
+    - field.field.block_content.footer_form.field_address_zipcode
+    - field.field.block_content.footer_form.field_email
+    - field.field.block_content.footer_form.field_facebook
+    - field.field.block_content.footer_form.field_footer_form
+    - field.field.block_content.footer_form.field_instagram
+    - field.field.block_content.footer_form.field_phone
+    - field.field.block_content.footer_form.field_twitter
+  module:
+    - options
+    - telephone
+    - text
+    - webform
+id: block_content.footer_form.default
+targetEntityType: block_content
+bundle: footer_form
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_address_city:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_address_name:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_address_state:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_address_street:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_address_zipcode:
+    weight: 6
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_email:
+    weight: 8
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_facebook:
+    weight: 10
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_footer_form:
+    weight: 1
+    label: hidden
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  field_instagram:
+    weight: 11
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_phone:
+    weight: 7
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_twitter:
+    weight: 9
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true

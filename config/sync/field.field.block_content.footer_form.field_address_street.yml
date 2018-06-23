@@ -1,0 +1,19 @@
+uuid: 81a4019a-dbf7-4c79-ba08-81eff3811f62
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_form
+    - field.storage.block_content.field_address_street
+id: block_content.footer_form.field_address_street
+field_name: field_address_street
+entity_type: block_content
+bundle: footer_form
+label: 'Address Street'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

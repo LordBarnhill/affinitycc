@@ -1,0 +1,26 @@
+uuid: 34dd1fba-97df-4d89-9cc9-772b81f5874a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - affinitycc
+_core:
+  default_config_hash: gVzqfjuuELh2BLZEDT6eVETuOOROe6n72hi3mnVSBRI
+id: affinitycc_tools
+theme: affinitycc
+region: content
+weight: -5
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

@@ -1,0 +1,43 @@
+uuid: a25e0a01-0fb7-485b-a35e-0e04535a6ca2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page.body
+    - field.field.node.page.field_paragraphs
+    - node.type.page
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+_core:
+  default_config_hash: TqOUiB-SgMCP53I5fWwbR6y_v0U_y28ZSN6ZbSAnrgc
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_paragraphs:
+    weight: 102
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  links:
+    weight: 101
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  shariff_field: true

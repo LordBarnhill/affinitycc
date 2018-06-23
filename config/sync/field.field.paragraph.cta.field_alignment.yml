@@ -1,0 +1,21 @@
+uuid: badaf017-1f6e-42cf-9664-77e1ae427a5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_alignment
+    - paragraphs.paragraphs_type.cta
+  module:
+    - options
+id: paragraph.cta.field_alignment
+field_name: field_alignment
+entity_type: paragraph
+bundle: cta
+label: Alignment
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

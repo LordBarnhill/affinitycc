@@ -1,0 +1,30 @@
+uuid: 5cdde0c3-e322-4f20-812a-a4edc53a1f54
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.articles_view
+  module:
+    - system
+    - views
+  theme:
+    - affinitycc
+id: views_block__articles_view_latest_articles_home
+theme: affinitycc
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:articles_view-latest_articles_home'
+settings:
+  id: 'views_block:articles_view-latest_articles_home'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

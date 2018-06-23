@@ -1,0 +1,71 @@
+uuid: 09cfd0c8-1e35-4b58-bb78-986617cc5da0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cta.field_alignment
+    - field.field.paragraph.cta.field_heading
+    - field.field.paragraph.cta.field_image
+    - field.field.paragraph.cta.field_link_text
+    - field.field.paragraph.cta.field_link_url
+    - field.field.paragraph.cta.field_text
+    - paragraphs.paragraphs_type.cta
+  module:
+    - empty_fields
+    - options
+    - text
+id: paragraph.cta.default
+targetEntityType: paragraph
+bundle: cta
+mode: default
+content:
+  field_alignment:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_heading:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings:
+      empty_fields:
+        handler: ''
+    type: entity_reference_entity_view
+    region: content
+  field_link_text:
+    weight: 6
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_link_url:
+    weight: 5
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

@@ -1,0 +1,5 @@
+# Schema for the theme setting configuration file of the affinitycc theme.
+
+affinitycc.settings:
+  type: theme_settings
+  label: 'Affinity CC settings'

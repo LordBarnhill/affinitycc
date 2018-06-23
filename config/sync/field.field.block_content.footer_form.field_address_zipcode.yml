@@ -1,0 +1,23 @@
+uuid: 100afbc1-08de-4564-ba1c-7e2e4fcb9bff
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_form
+    - field.storage.block_content.field_address_zipcode
+id: block_content.footer_form.field_address_zipcode
+field_name: field_address_zipcode
+entity_type: block_content
+bundle: footer_form
+label: 'Address Zipcode'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 10000
+  max: 99999
+  prefix: ''
+  suffix: ''
+field_type: integer

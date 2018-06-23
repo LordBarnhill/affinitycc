@@ -1,0 +1,41 @@
+uuid: e20dff8e-019f-44ec-9718-4cf96345789d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.principles.field_heading
+    - field.field.paragraph.principles.field_principle_number
+    - field.field.paragraph.principles.field_text
+    - paragraphs.paragraphs_type.principles
+  module:
+    - text
+id: paragraph.principles.default
+targetEntityType: paragraph
+bundle: principles
+mode: default
+content:
+  field_heading:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_principle_number:
+    weight: 0
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_text:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

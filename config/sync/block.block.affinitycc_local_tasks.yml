@@ -1,0 +1,22 @@
+uuid: 62752ad5-11c6-4321-a888-0069bb17138c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - affinitycc
+_core:
+  default_config_hash: M6NKopDWSrk-aLt_-B6fmfIWAJIjOMUkUh95zYLqtmU
+id: affinitycc_local_tasks
+theme: affinitycc
+region: content
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

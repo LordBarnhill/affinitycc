@@ -1,0 +1,16 @@
+uuid: c70aca2d-bcbe-4c0f-be5b-ea7fbb12bd0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.square
+id: square
+label: Square
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: square
+breakpoint_group: responsive_image
+fallback_image_style: square

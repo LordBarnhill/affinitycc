@@ -1,0 +1,22 @@
+uuid: 43213bac-b2ab-4fde-af02-4d49c5ab8217
+langcode: en
+status: false
+dependencies:
+  module:
+    - thunder
+  theme:
+    - affinitycc
+_core:
+  default_config_hash: w1Wt4CfWOnj0P6dD6h97-r5U1qCC0W3hKreYzs-svwM
+id: affinitycc_powered
+theme: affinitycc
+region: header
+weight: -4
+provider: null
+plugin: thunder_powered_by_block
+settings:
+  id: thunder_powered_by_block
+  label: 'Powered by Thunder'
+  provider: thunder
+  label_display: '0'
+visibility: {  }

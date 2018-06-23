@@ -1,0 +1,22 @@
+uuid: a5e81b51-b0b6-4039-bc05-19e312cfa1f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - affinitycc
+_core:
+  default_config_hash: PEqEz1k7tHRCJ_mtDJq1WRTmzZA0hF_JELDRF9H7fNU
+id: affinitycc_content
+theme: affinitycc
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

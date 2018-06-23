@@ -1,0 +1,9 @@
+uuid: 2e9271ef-8d17-4595-978c-54ec66f1c423
+langcode: en
+status: true
+dependencies: {  }
+id: principles
+label: Principles
+icon_uuid: null
+description: 'A paragraph used to display one of the 5 principles of Affinity CC.'
+behavior_plugins: {  }

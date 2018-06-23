@@ -1,0 +1,154 @@
+uuid: 396d0c0b-a7dd-4457-adc8-c7d5b66a4fff
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_form
+    - field.field.block_content.footer_form.body
+    - field.field.block_content.footer_form.field_address_city
+    - field.field.block_content.footer_form.field_address_name
+    - field.field.block_content.footer_form.field_address_state
+    - field.field.block_content.footer_form.field_address_street
+    - field.field.block_content.footer_form.field_address_zipcode
+    - field.field.block_content.footer_form.field_email
+    - field.field.block_content.footer_form.field_facebook
+    - field.field.block_content.footer_form.field_footer_form
+    - field.field.block_content.footer_form.field_instagram
+    - field.field.block_content.footer_form.field_phone
+    - field.field.block_content.footer_form.field_twitter
+  module:
+    - field_group
+    - telephone
+    - text
+    - webform
+third_party_settings:
+  field_group:
+    group_address:
+      children:
+        - field_address_name
+        - field_address_street
+        - field_address_city
+        - field_address_state
+        - field_address_zipcode
+      parent_name: ''
+      weight: 4
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Address
+id: block_content.footer_form.default
+targetEntityType: block_content
+bundle: footer_form
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_address_city:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_address_name:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_address_state:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_address_street:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_address_zipcode:
+    weight: 9
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_email:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_facebook:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_footer_form:
+    weight: 3
+    settings:
+      default_data: true
+    third_party_settings: {  }
+    type: webform_entity_reference_select
+    region: content
+  field_instagram:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_phone:
+    weight: 5
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_twitter:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,26 @@
+uuid: b7c4a24a-0980-4722-9c3e-b2ab5e01042d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.gallery.field_media
+    - paragraphs.paragraphs_type.gallery
+_core:
+  default_config_hash: P6b4ZU9jyP9aiZ7GLEo4queMGHGVBBNtT5GBMimZ3Rg
+id: paragraph.gallery.default
+targetEntityType: paragraph
+bundle: gallery
+mode: default
+content:
+  field_media:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  uid: true

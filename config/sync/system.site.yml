@@ -1,0 +1,14 @@
+uuid: 581d0b7d-d37d-41e7-98a4-3d951aff8f40
+name: 'Affinity Coaching & Consulting'
+mail: b.r.barnhill@gmail.com
+slogan: 'A Slogan or Tagline can go here.'
+page:
+  403: ''
+  404: ''
+  front: /node/2
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

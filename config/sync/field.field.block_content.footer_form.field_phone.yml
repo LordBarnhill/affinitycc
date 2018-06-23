@@ -1,0 +1,21 @@
+uuid: 23c615fa-6a15-48fe-a50e-71e023617eeb
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_form
+    - field.storage.block_content.field_phone
+  module:
+    - telephone
+id: block_content.footer_form.field_phone
+field_name: field_phone
+entity_type: block_content
+bundle: footer_form
+label: Phone
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

@@ -1,0 +1,30 @@
+uuid: 5b2abc8d-0aaa-4468-ab4b-6f4b86d459e1
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - affinitycc
+_core:
+  default_config_hash: Tm83FwS11DMGfA-ZW_n9ZvixuACY9NWqydsRU3aRnA4
+id: affinitycc_branding
+theme: affinitycc
+region: featured
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

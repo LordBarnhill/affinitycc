@@ -1,0 +1,29 @@
+uuid: 48a7a490-af8e-4f3f-907d-b580372c8a1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_form
+    - field.storage.block_content.field_footer_form
+  module:
+    - webform
+id: block_content.footer_form.field_footer_form
+field_name: field_footer_form
+entity_type: block_content
+bundle: footer_form
+label: Form
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  default_data: ''
+  status: open
+  open: ''
+  close: ''
+field_type: webform
