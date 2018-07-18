@@ -1,0 +1,27 @@
+uuid: 129b39bb-a6ce-490c-b667-a78a896e5237
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_table_style
+field_name: field_table_style
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 'Style 1'
+    -
+      value: '2'
+      label: 'Style 2'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

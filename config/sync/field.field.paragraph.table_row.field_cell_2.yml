@@ -1,0 +1,19 @@
+uuid: 76a69c17-1ccc-46fc-a9a4-f6d677066952
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cell_2
+    - paragraphs.paragraphs_type.table_row
+id: paragraph.table_row.field_cell_2
+field_name: field_cell_2
+entity_type: paragraph
+bundle: table_row
+label: 'Cell 2'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

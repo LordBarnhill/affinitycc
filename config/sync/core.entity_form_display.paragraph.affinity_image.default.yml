@@ -1,0 +1,32 @@
+uuid: b7e5676b-c353-475f-94db-1e0f4b2a8bc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.browse_files_modal
+    - field.field.paragraph.affinity_image.field_pic
+    - paragraphs.paragraphs_type.affinity_image
+  module:
+    - entity_browser
+id: paragraph.affinity_image.default
+targetEntityType: paragraph
+bundle: affinity_image
+mode: default
+content:
+  field_pic:
+    weight: 0
+    settings:
+      entity_browser: browse_files_modal
+      field_widget_remove: true
+      selection_mode: selection_append
+      preview_image_style: thumbnail
+      field_widget_edit: true
+      open: false
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_browser_file
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

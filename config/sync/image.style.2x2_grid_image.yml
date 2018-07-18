@@ -1,0 +1,17 @@
+uuid: 4f6616ec-bdd6-4d33-b742-e8cbcbf0d4ee
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: 2x2_grid_image
+label: '2x2 Grid Image'
+effects:
+  8983d48e-6c80-4b34-b51a-04f37aa67278:
+    uuid: 8983d48e-6c80-4b34-b51a-04f37aa67278
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 426
+      height: 249
+      crop_type: focal_point

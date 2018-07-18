@@ -1,0 +1,17 @@
+uuid: d083f483-56df-43c9-8d77-945fa64cf4ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: 3x3_image
+label: '3x3 Grid Image'
+effects:
+  6f5c46c6-38ae-4b35-8cc0-66456e674294:
+    uuid: 6f5c46c6-38ae-4b35-8cc0-66456e674294
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 274
+      height: 160
+      crop_type: focal_point

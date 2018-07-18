@@ -1,0 +1,9 @@
+uuid: 4625d43b-611d-48fd-a0bd-84ccff35d7e8
+langcode: en
+status: true
+dependencies: {  }
+id: 2x2_image_grid
+label: '2x2 Image Grid'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

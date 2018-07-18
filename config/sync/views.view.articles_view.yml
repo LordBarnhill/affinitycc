@@ -441,15 +441,17 @@ display:
       display_description: ''
       path: blog
       pager:
-        type: mini
+        type: full
         options:
           items_per_page: 8
           offset: 0
           id: 0
-          total_pages: 5
+          total_pages: 0
           tags:
-            previous: ‹‹
-            next: ››
+            previous: Prev
+            next: Next
+            first: ''
+            last: ''
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -458,6 +460,7 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
+          quantity: 5
     cache_metadata:
       max-age: -1
       contexts:

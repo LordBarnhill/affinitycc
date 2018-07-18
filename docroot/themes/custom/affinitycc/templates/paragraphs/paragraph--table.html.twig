@@ -1,0 +1,20 @@
+{% block paragraph %}
+  <div class="table-wrapper">
+    {% if '1' in content.field_table_style.0 %}
+    <table>
+    {% else %}
+    <table class="alt">
+    {% endif %}
+      <thead>
+        <tr>
+          <th>{{ content.field_column_1_title.0 }}</th>
+          <th>{{ content.field_column_2_title.0 }}</th>
+          <th>{{ content.field_column_3_title.0 }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ content.field_rows }}
+      </tbody>
+    </table>
+  </div>
+{% endblock paragraph %}

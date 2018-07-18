@@ -6,7 +6,16 @@ dependencies:
     - field.storage.node.field_paragraphs
     - node.type.article
     - paragraphs.paragraphs_type.cta
+    - paragraphs.paragraphs_type.gallery
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.instagram
+    - paragraphs.paragraphs_type.link
+    - paragraphs.paragraphs_type.pinterest
     - paragraphs.paragraphs_type.principles
+    - paragraphs.paragraphs_type.quote
+    - paragraphs.paragraphs_type.table_row
+    - paragraphs.paragraphs_type.twitter
+    - paragraphs.paragraphs_type.video
   module:
     - entity_reference_revisions
 _core:
@@ -28,38 +37,65 @@ settings:
     target_bundles:
       cta: cta
       principles: principles
+      quote: quote
+      link: link
+      instagram: instagram
+      twitter: twitter
+      gallery: gallery
+      image: image
+      video: video
+      pinterest: pinterest
+      table_row: table_row
     target_bundles_drag_drop:
+      2x2_image_grid:
+        weight: -35
+        enabled: false
+      3x3_image_grid:
+        weight: -34
+        enabled: false
+      affinity_image:
+        weight: -33
+        enabled: false
+      table:
+        weight: -32
+        enabled: false
       text:
-        weight: 1
+        weight: -31
         enabled: false
-      quote:
-        weight: 2
-        enabled: false
-      link:
-        weight: 3
-        enabled: false
-      instagram:
-        weight: 4
-        enabled: false
-      twitter:
-        weight: 5
-        enabled: false
-      gallery:
-        weight: 6
-        enabled: false
-      image:
-        weight: 7
-        enabled: false
-      video:
-        weight: 8
-        enabled: false
-      pinterest:
-        weight: 9
+      text_with_image:
+        weight: -30
         enabled: false
       cta:
         enabled: true
-        weight: 12
+        weight: -29
       principles:
         enabled: true
-        weight: 18
+        weight: -28
+      quote:
+        enabled: true
+        weight: -27
+      link:
+        enabled: true
+        weight: -26
+      instagram:
+        enabled: true
+        weight: -25
+      twitter:
+        enabled: true
+        weight: -24
+      gallery:
+        enabled: true
+        weight: -23
+      image:
+        enabled: true
+        weight: -22
+      video:
+        enabled: true
+        weight: -21
+      pinterest:
+        enabled: true
+        weight: -20
+      table_row:
+        enabled: true
+        weight: -19
 field_type: entity_reference_revisions

@@ -1,0 +1,64 @@
+uuid: b389f5d3-6e7a-494b-a47e-cd2ff9e81c5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.table.field_column_1_title
+    - field.field.paragraph.table.field_column_2_title
+    - field.field.paragraph.table.field_column_3_title
+    - field.field.paragraph.table.field_rows
+    - field.field.paragraph.table.field_table_style
+    - paragraphs.paragraphs_type.table
+  module:
+    - paragraphs
+id: paragraph.table.default
+targetEntityType: paragraph
+bundle: table
+mode: default
+content:
+  field_column_1_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_column_2_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_column_3_title:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_rows:
+    type: entity_reference_paragraphs
+    weight: 4
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_table_style:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

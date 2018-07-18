@@ -1,0 +1,28 @@
+uuid: 61969b6f-76a4-4fc1-96a6-50f472439157
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.affinity_image.field_pic
+    - image.style.729x426
+    - paragraphs.paragraphs_type.affinity_image
+  module:
+    - empty_fields
+    - image
+id: paragraph.affinity_image.default
+targetEntityType: paragraph
+bundle: affinity_image
+mode: default
+content:
+  field_pic:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: 729x426
+      image_link: file
+    third_party_settings:
+      empty_fields:
+        handler: ''
+    type: image
+    region: content
+hidden: {  }

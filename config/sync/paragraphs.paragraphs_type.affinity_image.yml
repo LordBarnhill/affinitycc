@@ -1,0 +1,9 @@
+uuid: b54968f5-d075-4536-9222-f44361309ebb
+langcode: en
+status: true
+dependencies: {  }
+id: affinity_image
+label: Image
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,79 @@
+uuid: 33811405-3b98-4a34-84bc-4281d36c4b07
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_rows
+    - paragraphs.paragraphs_type.table
+    - paragraphs.paragraphs_type.table_row
+  module:
+    - entity_reference_revisions
+id: paragraph.table.field_rows
+field_name: field_rows
+entity_type: paragraph
+bundle: table
+label: Rows
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      table_row: table_row
+    target_bundles_drag_drop:
+      2x2_image_grid:
+        weight: 18
+        enabled: false
+      3x3_image_grid:
+        weight: 19
+        enabled: false
+      affinity_image:
+        weight: 20
+        enabled: false
+      cta:
+        weight: 21
+        enabled: false
+      gallery:
+        weight: 22
+        enabled: false
+      image:
+        weight: 23
+        enabled: false
+      instagram:
+        weight: 24
+        enabled: false
+      link:
+        weight: 25
+        enabled: false
+      pinterest:
+        weight: 26
+        enabled: false
+      principles:
+        weight: 27
+        enabled: false
+      quote:
+        weight: 28
+        enabled: false
+      table:
+        weight: 29
+        enabled: false
+      table_row:
+        enabled: true
+        weight: 30
+      text:
+        weight: 31
+        enabled: false
+      text_with_image:
+        weight: 32
+        enabled: false
+      twitter:
+        weight: 33
+        enabled: false
+      video:
+        weight: 34
+        enabled: false
+field_type: entity_reference_revisions

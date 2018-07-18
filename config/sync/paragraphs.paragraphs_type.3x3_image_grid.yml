@@ -1,0 +1,9 @@
+uuid: bf1ee696-83e2-41c5-9fb6-61e3d1c0b91f
+langcode: en
+status: true
+dependencies: {  }
+id: 3x3_image_grid
+label: '3x3 Image Grid'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

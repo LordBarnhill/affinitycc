@@ -1,0 +1,23 @@
+uuid: 7b3f5ae2-ffec-408f-983f-47a6686fc91c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_table_style
+    - paragraphs.paragraphs_type.table
+  module:
+    - options
+id: paragraph.table.field_table_style
+field_name: field_table_style
+entity_type: paragraph
+bundle: table
+label: 'Table Style'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: '1'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

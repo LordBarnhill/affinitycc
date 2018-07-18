@@ -5,6 +5,15 @@ dependencies:
   config:
     - field.storage.node.field_paragraphs
     - node.type.page
+    - paragraphs.paragraphs_type.gallery
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.instagram
+    - paragraphs.paragraphs_type.link
+    - paragraphs.paragraphs_type.pinterest
+    - paragraphs.paragraphs_type.quote
+    - paragraphs.paragraphs_type.table_row
+    - paragraphs.paragraphs_type.twitter
+    - paragraphs.paragraphs_type.video
   module:
     - entity_reference_revisions
 id: node.page.field_paragraphs
@@ -20,37 +29,67 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
-    target_bundles: null
+    negate: 1
+    target_bundles:
+      gallery: gallery
+      image: image
+      instagram: instagram
+      link: link
+      pinterest: pinterest
+      quote: quote
+      twitter: twitter
+      video: video
+      table_row: table_row
     target_bundles_drag_drop:
-      cta:
-        weight: 11
-        enabled: false
       gallery:
-        weight: 12
-        enabled: false
+        enabled: true
+        weight: -35
       image:
-        weight: 13
-        enabled: false
+        enabled: true
+        weight: -34
       instagram:
-        weight: 14
-        enabled: false
+        enabled: true
+        weight: -33
       link:
-        weight: 15
+        enabled: true
+        weight: -32
+      2x2_image_grid:
+        weight: -31
+        enabled: false
+      3x3_image_grid:
+        weight: -30
+        enabled: false
+      cta:
+        weight: -29
         enabled: false
       pinterest:
-        weight: 16
+        enabled: true
+        weight: -28
+      principles:
+        weight: -27
         enabled: false
       quote:
-        weight: 17
+        enabled: true
+        weight: -26
+      affinity_image:
+        weight: -25
+        enabled: false
+      table:
+        weight: -24
         enabled: false
       text:
-        weight: 18
+        weight: -23
+        enabled: false
+      text_with_image:
+        weight: -22
         enabled: false
       twitter:
-        weight: 19
-        enabled: false
+        enabled: true
+        weight: -21
       video:
-        weight: 20
-        enabled: false
+        enabled: true
+        weight: -20
+      table_row:
+        enabled: true
+        weight: -19
 field_type: entity_reference_revisions

@@ -1,0 +1,74 @@
+uuid: 4d81b235-b4d2-4193-bccb-b56b41d32e57
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.browse_files_modal
+    - field.field.paragraph.2x2_image_grid.field_image_1
+    - field.field.paragraph.2x2_image_grid.field_image_2
+    - field.field.paragraph.2x2_image_grid.field_image_3
+    - field.field.paragraph.2x2_image_grid.field_image_4
+    - paragraphs.paragraphs_type.2x2_image_grid
+  module:
+    - entity_browser
+id: paragraph.2x2_image_grid.default
+targetEntityType: paragraph
+bundle: 2x2_image_grid
+mode: default
+content:
+  field_image_1:
+    weight: 0
+    settings:
+      entity_browser: browse_files_modal
+      field_widget_remove: true
+      selection_mode: selection_append
+      preview_image_style: thumbnail
+      field_widget_edit: true
+      open: false
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_browser_file
+    region: content
+  field_image_2:
+    weight: 1
+    settings:
+      entity_browser: browse_files_modal
+      field_widget_remove: true
+      selection_mode: selection_append
+      preview_image_style: thumbnail
+      field_widget_edit: true
+      open: false
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_browser_file
+    region: content
+  field_image_3:
+    weight: 2
+    settings:
+      entity_browser: browse_files_modal
+      field_widget_remove: true
+      selection_mode: selection_append
+      preview_image_style: thumbnail
+      field_widget_edit: true
+      open: false
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_browser_file
+    region: content
+  field_image_4:
+    weight: 3
+    settings:
+      entity_browser: browse_files_modal
+      field_widget_remove: true
+      selection_mode: selection_append
+      preview_image_style: thumbnail
+      field_widget_edit: true
+      open: false
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_browser_file
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true
