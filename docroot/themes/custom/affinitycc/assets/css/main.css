@@ -258,11 +258,46 @@ h3.principle {
 	}
 
 	blockquote {
-		border-left: solid 4px rgba(255, 255, 255, 0.125);
-		font-style: italic;
-		margin: 0 0 2em 0;
-		padding: 0.5em 0 0.5em 2em;
+		display: block;
+		border-width: 2px 0;
+		border-style: solid;
+		border-color: #eee;
+		padding: 1.5em;
+		margin: 1.5em 0;
+		position: relative;
+		background-color: #1C3938;
 	}
+
+	blockquote:before {
+   content: '\TODAY\0027S METAPHOR';
+   position: absolute;
+   top: 0em;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background: #1C3938;
+   font: 1em/1.08em 'Open Sans', sans-serif;
+   font-weight: 700;
+   color: #efefef;
+   text-align: center;
+ 	}
+
+	blockquote:after {
+   content: '\201D';
+   position: absolute;
+   bottom: -0.15em;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background: #1C3938;
+   width: 3rem;
+   height: 2rem;
+   font: 6em/1.08em 'PT Sans', sans-serif;
+   color: #666;
+   text-align: center;
+ 	}
+
+blockquote p {
+  margin: 0px
+ }
 
 	code {
 		background: rgba(255, 255, 255, 0.025);
@@ -837,6 +872,12 @@ h3.principle {
 				font-size: 0.8em;
 			}
 
+	}
+
+	@media screen and (max-width: 400px) {
+		#wrapper > header.content-header-dark {
+			padding: 2.25em 1em 2.25em 1em;
+		}
 	}
 
 	.wrapper {

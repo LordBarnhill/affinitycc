@@ -34,20 +34,7 @@
 
   <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-  <section id="wrapper">
-    <header class="content-header-dark">
-      <div class="inner">
-        <h2>The <span class="number">5</span> Principles</h2>
-        <p>the guiding principles we follow</p>
-      </div>
-    </header>
-
-    <div class="wrapper content-dark">
-      <div class="inner">
-        {{ page.content }}
-      </div>
-    </div>
-  </section>
+  {{ page.content }}
 
   {% if page.sidebar_first %}
     <aside class="layout-sidebar-first" role="complementary">
@@ -62,6 +49,8 @@
   {% endif %}
 
   <section id="footer">
+    {{ page.footer }}
+
     <div class="inner secondary">
       <ul class="copyright">
         <li>&copy; Affinity Coaching & Consulting. All rights reserved.</li><li>Design: <a href="http://steventrotter.com">Steven Trotter</a></li>
